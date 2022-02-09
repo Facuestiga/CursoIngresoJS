@@ -11,11 +11,31 @@ function mostrarAumento()
 
 	importe = document.getElementById("txtIdImporte").value;
 
-	//// Hago la cuenta para obtener el descuento del 25%
-	descuento = parseInt(importe) * 0.25;
+	importe = parseInt(importe);
 
-	// A traves de ID le asigno value a la variable resultado y ese value es = sueldo - descuento
-	resultado = document.getElementById("txtIdResultado").value = parseInt(importe) - descuento;
+	descuento = importe * 0.25;
+
+	resultado = importe - descuento;
+
+	document.getElementById("txtIdResultado").value = resultado;
+
+}
+
+// Manera 2
+
+function mostrarAumento()
+{
+	let importe;
+	let resultado;
+
+	importe = document.getElementById("txtIdImporte").value;
+
+	importe = parseInt(importe);
+
+	resultado = importe * 0.75
+
+	document.getElementById("txtIdResultado").value = resultado;
 
 
+	
 }

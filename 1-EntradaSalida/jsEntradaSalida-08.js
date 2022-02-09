@@ -13,7 +13,6 @@ function SacarResto()
 		numero2 = document.getElementById("txtIdNumeroDivisor").value;
 
 		resultado = parseInt(numero1) % parseInt(numero2);
-
 		alert("El resto es " +resultado);
 
 

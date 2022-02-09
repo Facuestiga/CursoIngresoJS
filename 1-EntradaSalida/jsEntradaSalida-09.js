@@ -11,11 +11,19 @@ function mostrarAumento()
 
 	sueldo = document.getElementById("txtIdSueldo").value;
 	
+	sueldo = parseInt(sueldo);
 	// Hago la cuenta para obtener el aumento del 10%
-	aumento = parseInt(sueldo) * 0.10;
+	
+	aumento = sueldo * 0.10;
+
+	aumento = parseInt(aumento);
 
 	// A traves de ID le asigno value a la variable resultado y ese value es = al sueldo + aumento
-	resultado = document.getElementById("txtIdResultado").value =  parseInt(sueldo) + aumento;
+	resultado = aumento + sueldo;
+
+	document.getElementById("txtIdResultado").value = resultado;
+
+	
 
 	
 }

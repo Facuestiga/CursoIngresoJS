@@ -11,9 +11,9 @@ function sumar()
 
 	numero1 = document.getElementById("txtIdNumeroUno").value;
 	numero2 = document.getElementById("txtIdNumeroDos").value;
-
+	
 	resultado = parseInt(numero1) + parseInt(numero2);
-
+	
 	alert("La suma es "+ resultado);
 	
 
